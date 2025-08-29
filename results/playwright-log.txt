@@ -1,0 +1,72 @@
+{"level":30,"time":"2025-08-27T04:46:37.585Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Listening on 127.0.0.1:59313"}
+(node:27083) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-08-27T04:46:38.644Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-27T04:46:41.904Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Adding browser to stack: chromium, version: 139.0.7258.5"}
+{"level":30,"time":"2025-08-27T04:46:41.906Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-08-27T04:46:41.906Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-08-27T04:46:41.918Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-08-27T04:46:41.918Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":true,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1200,\"height\":768}}"}
+{"level":30,"time":"2025-08-27T04:46:41.918Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@ef35254c1a936bce8941498c76e2bd10\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=f26ef280-f77b-4271-8bb1-dad48dad6b4a\"}"}
+{"level":30,"time":"2025-08-27T04:46:41.918Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Trace file: "}
+{"level":30,"time":"2025-08-27T04:46:41.928Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Setting default timeout for context context=8e148791-909a-4a7f-a301-3870d52f0709 to 10000"}
+{"level":30,"time":"2025-08-27T04:46:41.928Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method newContext"}
+{"level":30,"time":"2025-08-27T04:46:41.928Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Changed active context: context=8e148791-909a-4a7f-a301-3870d52f0709"}
+{"level":30,"time":"2025-08-27T04:46:41.933Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-27T04:46:41.934Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@ef35254c1a936bce8941498c76e2bd10\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=8e148791-909a-4a7f-a301-3870d52f0709\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@09e705f3c5a9c62e2da16909e87ee52d\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":true,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1200,\"height\":768}},\"traceFile\":\"\"}],\"id\":\"browser=f26ef280-f77b-4271-8bb1-dad48dad6b4a\"}"}
+{"level":30,"time":"2025-08-27T04:46:42.480Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-27T04:46:42.480Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2025-08-27T04:46:46.027Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-27T04:46:46.033Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-27T04:46:46.037Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-27T04:46:46.041Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-27T04:46:46.041Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Strict mode is enabled, find Locator with //input[@name=\"username\"] in page."}
+{"level":30,"time":"2025-08-27T04:46:46.863Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-27T04:46:46.869Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-27T04:46:46.869Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Strict mode is enabled, find Locator with //input[@name=\"password\"] in page."}
+{"level":30,"time":"2025-08-27T04:46:46.877Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-27T04:46:46.881Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-27T04:46:46.882Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","Take screenshot with options: ":{"path":"/Users/mindmc/Desktop/Assignment-1/results/browser/screenshot/robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-27T04:46:47.525Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-27T04:46:47.529Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-27T04:46:47.529Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Strict mode is enabled, find Locator with //button[@type=\"submit\"] in page."}
+{"level":30,"time":"2025-08-27T04:46:47.560Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2025-08-27T04:46:47.564Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-27T04:46:47.564Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","Take screenshot with options: ":{"path":"/Users/mindmc/Desktop/Assignment-1/results/browser/screenshot/robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-27T04:46:47.678Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-27T04:46:47.681Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-27T04:46:47.682Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Strict mode is enabled, find Locator with //span[normalize-space()='PIM'] in page."}
+{"level":30,"time":"2025-08-27T04:46:48.684Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+[2m  - waiting for locator('//span[normalize-space()=\'PIM\']') to be visible[22m
+[2m    - waiting for" https://opensource-demo.orangehrmlive.com/web/index.php/auth/validate" navigation to finish...[22m
+[2m    - navigated to "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"[22m
+
+    at waitForElementState (/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js:11283:19)
+    at async PlaywrightServer.waitForElementsState (/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js:13137:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-08-27T04:46:48.687Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-27T04:46:48.687Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","Take screenshot with options: ":{"path":"/Users/mindmc/Desktop/Assignment-1/results/browser/screenshot/fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-27T04:46:48.743Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-27T04:46:48.769Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-27T04:46:48.770Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-27T04:46:48.777Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-27T04:46:48.778Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-27T04:46:48.779Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-27T04:46:48.779Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-27T04:46:48.781Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-27T04:46:48.781Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-27T04:46:48.786Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-27T04:46:48.787Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-27T04:46:48.789Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Changed active context: context=8e148791-909a-4a7f-a301-3870d52f0709"}
+{"level":30,"time":"2025-08-27T04:46:48.789Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Changing current active page: page=84aee684-eb87-4af9-86e0-f53272775e4f"}
+{"level":30,"time":"2025-08-27T04:46:48.789Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2025-08-27T04:46:48.793Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-08-27T04:46:48.812Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Removed page=be111e61-bda4-45a9-81d5-2999f122d2e2 from context=8e148791-909a-4a7f-a301-3870d52f0709 page stack"}
+{"level":30,"time":"2025-08-27T04:46:48.826Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-08-27T04:46:49.374Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-08-27T04:46:49.527Z","pid":27083,"hostname":"Angeliqz-Mac-Air.local","msg":"End of node method closeAllBrowsers"}

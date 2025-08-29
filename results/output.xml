@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on darwin)" generated="2025-08-27T11:46:36.217692" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment-1" source="/Users/mindmc/Desktop/Assignment-1">
+<suite id="s1-s1" name="Testcase" source="/Users/mindmc/Desktop/Assignment-1/Testcase">
+<suite id="s1-s1-s1" name="Assignment" source="/Users/mindmc/Desktop/Assignment-1/Testcase/assignment.robot">
+<kw name="Open Web Browser" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-27T11:46:36.857394" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/mindmc/Desktop/Assignment-1/results/browser/traces/temp/fd90455a-27ee-455c-b23f-71f9ac493735"}</msg>
+<msg time="2025-08-27T11:46:36.981425" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js using at 127.0.0.1:59313</msg>
+<msg time="2025-08-27T11:46:41.909320" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/mindmc/Desktop/Assignment-1/results/browser/traces/temp/fd90455a-27ee-455c-b23f-71f9ac493735"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-27T11:46:36.856754" elapsed="5.053177"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-08-27T11:46:41.914011" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": true,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1200,
+    "height": 768
+  }
+}</msg>
+<msg time="2025-08-27T11:46:41.930182" level="INFO">Successfully created context. </msg>
+<msg time="2025-08-27T11:46:41.930417" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': True, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 768}}</msg>
+<arg>viewport={"width": 1200, "height": 768}</arg>
+<arg>ignoreHTTPSErrors=True</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-08-27T11:46:41.910403" elapsed="0.020154"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-27T11:46:46.028883" level="INFO">Successfully initialized new page object and opened url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-27T11:46:41.930796" elapsed="4.098345"/>
+</kw>
+<status status="PASS" start="2025-08-27T11:46:36.856092" elapsed="9.173216"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Testing Assignment" line="23">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T11:46:46.039081" level="INFO">eiei</msg>
+<arg>eiei</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T11:46:46.038781" elapsed="0.000409"/>
+</kw>
+<kw name="Input Text">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T11:46:46.040423" level="INFO">Fills the text 'Admin' in the given field.</msg>
+<arg>${xpath}</arg>
+<arg>${text}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T11:46:46.039917" elapsed="0.825150"/>
+</kw>
+<arg>//input[@name="username"]</arg>
+<arg>Admin</arg>
+<status status="PASS" start="2025-08-27T11:46:46.039561" elapsed="0.826187"/>
+</kw>
+<kw name="Input Text">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T11:46:46.867465" level="INFO">Fills the text 'admin1234' in the given field.</msg>
+<arg>${xpath}</arg>
+<arg>${text}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T11:46:46.866758" elapsed="0.011890"/>
+</kw>
+<arg>//input[@name="password"]</arg>
+<arg>admin1234</arg>
+<status status="PASS" start="2025-08-27T11:46:46.866169" elapsed="0.012690"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-08-27T11:46:47.526555" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-08-27T11:46:46.879089" elapsed="0.647677"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T11:46:47.527607" level="INFO">Clicks the element '//button[@type="submit"]'.</msg>
+<arg>//button[@type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T11:46:47.527127" elapsed="0.034746"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-08-27T11:46:47.679685" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-08-27T11:46:47.562132" elapsed="0.117791"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T11:46:48.744241" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-08-27T11:46:48.744438" level="INFO">See also file:///Users/mindmc/Desktop/Assignment-1/results/playwright-log.txt for additional details.</msg>
+<msg time="2025-08-27T11:46:48.744838" level="FAIL">TimeoutError: locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+  - waiting for locator('//span[normalize-space()=\'PIM\']') to be visible
+    - waiting for" https://opensource-demo.orangehrmlive.com/web/index.php/auth/validate" navigation to finish...
+    - navigated to "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+</msg>
+<arg>//span[normalize-space()='PIM']</arg>
+<arg>visible</arg>
+<arg>timeout=1s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2025-08-27T11:46:47.680290" elapsed="1.075523">TimeoutError: locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+  - waiting for locator('//span[normalize-space()=\'PIM\']') to be visible
+    - waiting for" https://opensource-demo.orangehrmlive.com/web/index.php/auth/validate" navigation to finish...
+    - navigated to "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>//span[normalize-space()='PIM']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-27T11:46:48.756117" elapsed="0.000147"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>//button[normalize-space()='Add']</arg>
+<arg>visible</arg>
+<arg>timeout=1s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-08-27T11:46:48.756396" elapsed="0.000080"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>//button[normalize-space()='Add']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-27T11:46:48.756750" elapsed="0.000075"/>
+</kw>
+<kw name="Input Text">
+<arg>//input[@placeholder='First Name']</arg>
+<arg>Robot</arg>
+<status status="NOT RUN" start="2025-08-27T11:46:48.756990" elapsed="0.000077"/>
+</kw>
+<kw name="Input Text">
+<arg>//input[@placeholder='Last Name']</arg>
+<arg>Framework</arg>
+<status status="NOT RUN" start="2025-08-27T11:46:48.757183" elapsed="0.000063"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<var>${employee_id}</var>
+<arg>(//input[@class='oxd-input oxd-input--focus'])[1]</arg>
+<arg>value</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-27T11:46:48.757359" elapsed="0.000075"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="NOT RUN" start="2025-08-27T11:46:48.757640" elapsed="0.000283"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${employee_id}</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-08-27T11:46:48.758116" elapsed="0.000099"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>//button[@type='submit']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-27T11:46:48.758343" elapsed="0.000077"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-08-27T11:46:48.758530" elapsed="0.000069"/>
+</kw>
+<tag>TestCase1</tag>
+<status status="FAIL" start="2025-08-27T11:46:46.029420" elapsed="2.729399">TimeoutError: locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+  - waiting for locator('//span[normalize-space()=\'PIM\']') to be visible
+    - waiting for" https://opensource-demo.orangehrmlive.com/web/index.php/auth/validate" navigation to finish...
+    - navigated to "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+</status>
+</test>
+<status status="FAIL" start="2025-08-27T11:46:36.253904" elapsed="12.517783"/>
+</suite>
+<status status="FAIL" start="2025-08-27T11:46:36.250491" elapsed="12.576834"/>
+</suite>
+<status status="FAIL" start="2025-08-27T11:46:36.222717" elapsed="12.608248"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">TestCase1</stat>
+</tag>
+<suite>
+<stat name="Assignment-1" id="s1" pass="0" fail="1" skip="0">Assignment-1</stat>
+<stat name="Testcase" id="s1-s1" pass="0" fail="1" skip="0">Assignment-1.Testcase</stat>
+<stat name="Assignment" id="s1-s1-s1" pass="0" fail="1" skip="0">Assignment-1.Testcase.Assignment</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,15 @@
+*** Variables ***
+# xpath
+${username_path}                //input[@name="username"]
+${surname_path}                 //input[@name="password"]
+${submit_btn_path}              //button[@type="submit"] 
+${PIM_path}                     //span[normalize-space()="PIM"]
+${PIM_add_btn_path}             //button[normalize-space()="Add"]
+${PIM_input_name_path}          //input[@placeholder="First Name"]
+${PIM_input_surname_path}       //input[@placeholder="Last Name"] 
+${PIM_input_employee_id_path}   (//input[@class="oxd-input oxd-input--active"])[2]
+${PIM_employee_img_path}         //img[@class="employee-image"]
+${employee_list_path}            //a[normalize-space()="Employee List"]
+${employee_search_path}          //button[normalize-space()="Search"]
+${profile_img_path}              //img[@alt="profile picture"]
+${logout_path}                   //a[normalize-space()="Logout"]
