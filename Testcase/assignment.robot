@@ -71,9 +71,12 @@ Testing Assignment
 
 Toggle Checkbox
     [Tags]    TestCase2
-    Open Web Browser    https://demoqa.com/checkbox  
-    Checkbox by name    ${ckecked_box_name} 
+    Open Web Browser    https://demoqa.com/checkbox
+    Click    //button[@class="rct-option rct-option-expand-all"]
+    Checkbox by name    Home 
     Take Screenshot
-    Checkbox by name    ${ckecked_box_name} 
+    Checkbox by name    Documents
+    Take Screenshot
+    Checkbox by name    Commands
     Take Screenshot
     
