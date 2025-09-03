@@ -11,4 +11,5 @@ ${password}    admin123
 ${name}        Robot
 ${surname}     Framework
 
+${testcheckbox_url}    https://demoqa.com/checkbox
 ${ckecked_box_name}    Home

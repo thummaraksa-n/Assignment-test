@@ -71,8 +71,11 @@ Testing Assignment
 
 Toggle Checkbox
     [Tags]    TestCase2
-    Open Web Browser    https://demoqa.com/checkbox
-    Click    //button[@class="rct-option rct-option-expand-all"]
+    Open Web Browser    ${testcheckbox_url}
+    # เปิดปุ่ม expand ทั้งหมด ดูว่ากดผ่านชื่อได้จริงหรือเปล่า
+    Click               //button[@class="rct-option rct-option-expand-all"]
+
+    # ลองใส่ชื่อผ่าน Keyword 
     Checkbox by name    Home 
     Take Screenshot
     Checkbox by name    Documents
