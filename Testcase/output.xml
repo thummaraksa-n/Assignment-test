@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.7 on darwin)" generated="2025-08-29T15:28:11.469766" rpa="false" schemaversion="5">
-<suite id="s1" name="Assignment" source="/Users/mindmc/Desktop/Assignment-1/Testcase/assignment.robot">
-<test id="s1-t1" name="Toggle Checkbox" line="72">
-<kw name="Open Web Browser" owner="assignment">
+<robot generator="Robot 7.3.2 (Python 3.13.7 on darwin)" generated="2025-09-04T23:58:05.545484" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment2" source="/Users/mindmc/Desktop/Assignment-1/Testcase/assignment2.robot">
+<test id="s1-t1" name="Login is valid" line="59">
+<kw name="Open Web Browser">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-08-29T15:28:11.601613" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/mindmc/Desktop/Assignment-1/Testcase/browser/traces/temp/346f6e3b-b898-4bad-b668-6702049a1b37"}</msg>
-<msg time="2025-08-29T15:28:11.625601" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js using at 127.0.0.1:57747</msg>
-<msg time="2025-08-29T15:28:13.653400" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/mindmc/Desktop/Assignment-1/Testcase/browser/traces/temp/346f6e3b-b898-4bad-b668-6702049a1b37"}</msg>
+<msg time="2025-09-04T23:58:05.676958" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/mindmc/Desktop/Assignment-1/Testcase/browser/traces/temp/3f9f7da0-bb41-4927-b661-b53d4d3585f8"}</msg>
+<msg time="2025-09-04T23:58:05.701142" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js using at 127.0.0.1:60625</msg>
+<msg time="2025-09-04T23:58:08.188137" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/mindmc/Desktop/Assignment-1/Testcase/browser/traces/temp/3f9f7da0-bb41-4927-b661-b53d4d3585f8"}</msg>
 <arg>chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-08-29T15:28:11.601087" elapsed="2.052732"/>
+<status status="PASS" start="2025-09-04T23:58:05.676441" elapsed="2.512559"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2025-08-29T15:28:13.658429" level="INFO">{
+<msg time="2025-09-04T23:58:08.192389" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -25,109 +25,494 @@
   "reducedMotion": "no-preference",
   "serviceWorkers": "allow",
   "viewport": {
-    "width": 1200,
-    "height": 768
+    "height": 768,
+    "width": 1200
   }
 }</msg>
-<msg time="2025-08-29T15:28:13.671813" level="INFO">Successfully created context. </msg>
-<msg time="2025-08-29T15:28:13.671896" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': True, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1200, 'height': 768}}</msg>
+<msg time="2025-09-04T23:58:08.222399" level="INFO">Successfully created context. </msg>
+<msg time="2025-09-04T23:58:08.222485" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': True, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 768, 'width': 1200}}</msg>
 <arg>viewport={"width": ${testsite_width} , "height": ${testsite_height}}</arg>
 <arg>ignoreHTTPSErrors=True</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2025-08-29T15:28:13.655097" elapsed="0.016879"/>
+<status status="PASS" start="2025-09-04T23:58:08.189600" elapsed="0.032967"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-08-29T15:28:23.911250" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/checkbox</msg>
+<msg time="2025-09-04T23:58:15.399859" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
 <arg>${page_url}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-08-29T15:28:13.672162" elapsed="10.240339"/>
+<status status="PASS" start="2025-09-04T23:58:08.222769" elapsed="7.177476"/>
 </kw>
-<arg>${testcheckbox_url}</arg>
-<status status="PASS" start="2025-08-29T15:28:11.600469" elapsed="12.312885"/>
+<arg>${Web_Testing_Url}</arg>
+<status status="PASS" start="2025-09-04T23:58:05.675809" elapsed="9.724704"/>
+</kw>
+<kw name="Recheck Elements by path">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-04T23:58:15.436294" level="INFO">Waited for Element with selector //input[@id='username'] at state visible</msg>
+<arg>${path}</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-04T23:58:15.401814" elapsed="0.034632"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-04T23:58:15.436967" level="INFO">✅Found //input[@id='username'] element</msg>
+<arg>✅Found ${path} element</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-04T23:58:15.436651" elapsed="0.000395"/>
+</kw>
+<arg>${username_path}</arg>
+<status status="PASS" start="2025-09-04T23:58:15.401094" elapsed="0.036030"/>
+</kw>
+<kw name="Recheck Elements by path">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-04T23:58:15.441692" level="INFO">Waited for Element with selector //input[@id='password'] at state visible</msg>
+<arg>${path}</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-04T23:58:15.437552" elapsed="0.004256"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-04T23:58:15.442182" level="INFO">✅Found //input[@id='password'] element</msg>
+<arg>✅Found ${path} element</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-04T23:58:15.441951" elapsed="0.000293"/>
+</kw>
+<arg>${password_path}</arg>
+<status status="PASS" start="2025-09-04T23:58:15.437287" elapsed="0.005019"/>
+</kw>
+<kw name="Recheck Elements by path">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-04T23:58:15.448939" level="INFO">Waited for Element with selector //button[@type='submit'] at state visible</msg>
+<arg>${path}</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-04T23:58:15.442760" elapsed="0.006360"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-04T23:58:15.449593" level="INFO">✅Found //button[@type='submit'] element</msg>
+<arg>✅Found ${path} element</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-04T23:58:15.449314" elapsed="0.000350"/>
+</kw>
+<arg>${submit_btn_path}</arg>
+<status status="PASS" start="2025-09-04T23:58:15.442439" elapsed="0.007296"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-04T23:58:15.449991" level="INFO">found all login elements</msg>
+<arg>found all login elements</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-04T23:58:15.449865" elapsed="0.000169"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-09-04T23:58:15.450514" level="INFO">Types the text 'tomsmith' in the given field.</msg>
+<arg>${username_path}</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-04T23:58:15.450139" elapsed="0.022773"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-09-04T23:58:15.473622" level="INFO">Types the text 'SuperSecretPassword!' in the given field.</msg>
+<arg>${password_path}</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-04T23:58:15.473132" elapsed="0.024296"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-08-29T15:28:23.922842" level="INFO">Clicks the element '//button[@class="rct-option rct-option-expand-all"]'.</msg>
-<arg>//button[@class="rct-option rct-option-expand-all"]</arg>
+<msg time="2025-09-04T23:58:15.498167" level="INFO">Clicks the element '//button[@type='submit']'.</msg>
+<arg>${submit_btn_path}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-08-29T15:28:23.916160" elapsed="0.084635"/>
+<status status="PASS" start="2025-09-04T23:58:15.497681" elapsed="0.653649"/>
 </kw>
-<kw name="Checkbox by name" owner="assignment">
-<kw name="Click" owner="Browser">
-<msg time="2025-08-29T15:28:24.002208" level="INFO">Clicks the element '//span[contains(text(),'Home')]'.</msg>
-<arg>//span[contains(text(),'${textname}')]</arg>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-09-04T23:58:16.156477" level="INFO">${current_url} = https://the-internet.herokuapp.com/secure</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
 <tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-08-29T15:28:24.001757" elapsed="0.041878"/>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-09-04T23:58:16.151899" elapsed="0.004649"/>
 </kw>
-<arg>Home</arg>
-<status status="PASS" start="2025-08-29T15:28:24.001250" elapsed="0.042510"/>
+<if>
+<branch type="IF" condition="'${current_url}' == '${secure_page}'">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-04T23:58:16.159265" level="INFO">Login is correct and navigate to Secure Area</msg>
+<arg>Login is correct and navigate to Secure Area</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-04T23:58:16.158233" elapsed="0.001257"/>
 </kw>
-<kw name="Take Screenshot" owner="Browser">
-<msg time="2025-08-29T15:28:24.205847" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2025-08-29T15:28:24.044177" elapsed="0.161795"/>
+<status status="PASS" start="2025-09-04T23:58:16.157033" elapsed="0.002740"/>
+</branch>
+<branch type="ELSE">
+<kw name="Fail" owner="BuiltIn">
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2025-09-04T23:58:16.160477" elapsed="0.000337"/>
 </kw>
-<kw name="Checkbox by name" owner="assignment">
-<kw name="Click" owner="Browser">
-<msg time="2025-08-29T15:28:24.206812" level="INFO">Clicks the element '//span[contains(text(),'Documents')]'.</msg>
-<arg>//span[contains(text(),'${textname}')]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-08-29T15:28:24.206452" elapsed="0.031228"/>
-</kw>
-<arg>Documents</arg>
-<status status="PASS" start="2025-08-29T15:28:24.206189" elapsed="0.031603"/>
-</kw>
-<kw name="Take Screenshot" owner="Browser">
-<msg time="2025-08-29T15:28:24.514806" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2025-08-29T15:28:24.237966" elapsed="0.276960"/>
-</kw>
-<kw name="Checkbox by name" owner="assignment">
-<kw name="Click" owner="Browser">
-<msg time="2025-08-29T15:28:24.516065" level="INFO">Clicks the element '//span[contains(text(),'Commands')]'.</msg>
-<arg>//span[contains(text(),'${textname}')]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-08-29T15:28:24.515659" elapsed="0.039878"/>
-</kw>
-<arg>Commands</arg>
-<status status="PASS" start="2025-08-29T15:28:24.515289" elapsed="0.040370"/>
-</kw>
-<kw name="Take Screenshot" owner="Browser">
-<msg time="2025-08-29T15:28:24.672909" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2025-08-29T15:28:24.555843" elapsed="0.117184"/>
-</kw>
-<msg time="2025-08-29T15:28:24.682801" level="INFO">Switching context to context=4d0a1e87-1cd5-47d9-90f5-b153018c6e8f in CURRENT</msg>
-<msg time="2025-08-29T15:28:24.692790" level="INFO">Successfully changed active context: context=4d0a1e87-1cd5-47d9-90f5-b153018c6e8f</msg>
-<msg time="2025-08-29T15:28:24.748231" level="INFO">Successfully closed Context</msg>
-<tag>TestCase2</tag>
-<status status="PASS" start="2025-08-29T15:28:11.599964" elapsed="13.073257"/>
+<status status="NOT RUN" start="2025-09-04T23:58:16.160106" elapsed="0.000830"/>
+</branch>
+<status status="PASS" start="2025-09-04T23:58:16.156929" elapsed="0.004141"/>
+</if>
+<msg time="2025-09-04T23:58:16.191683" level="INFO">Switching context to context=acf35836-0d68-4101-8104-811e95ef07a3 in CURRENT</msg>
+<msg time="2025-09-04T23:58:16.200055" level="INFO">Successfully changed active context: context=acf35836-0d68-4101-8104-811e95ef07a3</msg>
+<msg time="2025-09-04T23:58:16.228919" level="INFO">Successfully closed Context</msg>
+<tag>TestCase1</tag>
+<status status="PASS" start="2025-09-04T23:58:05.675322" elapsed="10.486012"/>
 </test>
-<status status="PASS" start="2025-08-29T15:28:11.471086" elapsed="13.277941"/>
+<test id="s1-t2" name="Login Fails with Invalid Username" line="77">
+<kw name="Open Web Browser">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-04T23:58:16.231644" level="INFO">Switching browser to browser=4c64bad9-5088-4d94-b890-a598e124a4db</msg>
+<msg time="2025-09-04T23:58:16.232775" level="INFO">Successfully changed active browser: browser=4c64bad9-5088-4d94-b890-a598e124a4db</msg>
+<msg time="2025-09-04T23:58:16.232844" level="INFO">Reusing existing browser with id: browser=4c64bad9-5088-4d94-b890-a598e124a4db</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-04T23:58:16.231247" elapsed="0.001647"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-09-04T23:58:16.234542" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": true,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 768,
+    "width": 1200
+  }
+}</msg>
+<msg time="2025-09-04T23:58:16.257717" level="INFO">Successfully created context. </msg>
+<msg time="2025-09-04T23:58:16.257797" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': True, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 768, 'width': 1200}}</msg>
+<arg>viewport={"width": ${testsite_width} , "height": ${testsite_height}}</arg>
+<arg>ignoreHTTPSErrors=True</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-09-04T23:58:16.233026" elapsed="0.024830"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-04T23:58:20.626516" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/login</msg>
+<arg>${page_url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-04T23:58:16.258012" elapsed="4.368777"/>
+</kw>
+<arg>${Web_Testing_Url}</arg>
+<status status="PASS" start="2025-09-04T23:58:16.230920" elapsed="4.396031"/>
+</kw>
+<kw name="Recheck Elements by path">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-04T23:58:20.655594" level="INFO">Waited for Element with selector //input[@id='username'] at state visible</msg>
+<arg>${path}</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-04T23:58:20.628733" elapsed="0.027046"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-04T23:58:20.656336" level="INFO">✅Found //input[@id='username'] element</msg>
+<arg>✅Found ${path} element</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-04T23:58:20.655996" elapsed="0.000424"/>
+</kw>
+<arg>${username_path}</arg>
+<status status="PASS" start="2025-09-04T23:58:20.627592" elapsed="0.028909"/>
+</kw>
+<kw name="Recheck Elements by path">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-04T23:58:20.660781" level="INFO">Waited for Element with selector //input[@id='password'] at state visible</msg>
+<arg>${path}</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-04T23:58:20.656929" elapsed="0.004106"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-04T23:58:20.661495" level="INFO">✅Found //input[@id='password'] element</msg>
+<arg>✅Found ${path} element</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-04T23:58:20.661221" elapsed="0.000392"/>
+</kw>
+<arg>${password_path}</arg>
+<status status="PASS" start="2025-09-04T23:58:20.656665" elapsed="0.005052"/>
+</kw>
+<kw name="Recheck Elements by path">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-04T23:58:20.666629" level="INFO">Waited for Element with selector //button[@type='submit'] at state visible</msg>
+<arg>${path}</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-04T23:58:20.662211" elapsed="0.004679"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-04T23:58:20.667697" level="INFO">✅Found //button[@type='submit'] element</msg>
+<arg>✅Found ${path} element</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-04T23:58:20.667253" elapsed="0.000580"/>
+</kw>
+<arg>${submit_btn_path}</arg>
+<status status="PASS" start="2025-09-04T23:58:20.661900" elapsed="0.006106"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-04T23:58:20.668837" level="INFO">found all login elements</msg>
+<arg>found all login elements</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-04T23:58:20.668615" elapsed="0.000294"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-09-04T23:58:20.669464" level="INFO">Types the text 'abc' in the given field.</msg>
+<arg>${username_path}</arg>
+<arg>${username_wrong}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-04T23:58:20.669072" elapsed="0.012988"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-09-04T23:58:20.682746" level="INFO">Types the text 'SuperSecretPassword!' in the given field.</msg>
+<arg>${password_path}</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-04T23:58:20.682271" elapsed="0.027173"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-04T23:58:20.710091" level="INFO">Clicks the element '//button[@type='submit']'.</msg>
+<arg>${submit_btn_path}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-04T23:58:20.709657" elapsed="0.692282"/>
+</kw>
+<kw name="Recheck Elements by path">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-04T23:58:21.436656" level="INFO">Waited for Element with selector //div[@class='flash error'] at state visible</msg>
+<arg>${path}</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-04T23:58:21.403706" elapsed="0.033096"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-04T23:58:21.437255" level="INFO">✅Found //div[@class='flash error'] element</msg>
+<arg>✅Found ${path} element</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-04T23:58:21.436977" elapsed="0.000348"/>
+</kw>
+<arg>${flash_error}</arg>
+<status status="PASS" start="2025-09-04T23:58:21.402887" elapsed="0.034720"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-09-04T23:58:21.458896" level="INFO">Text: ' Your username is invalid!\n×'</msg>
+<msg time="2025-09-04T23:58:21.459035" level="INFO">${msg} =  Your username is invalid!
+×</msg>
+<var>${msg}</var>
+<arg>${flash_error}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-04T23:58:21.437774" elapsed="0.021287"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${msg}</arg>
+<arg>${username_alert}</arg>
+<arg>msg="Not Match"</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-09-04T23:58:21.459279" elapsed="0.000279"/>
+</kw>
+<msg time="2025-09-04T23:58:21.469606" level="INFO">Switching context to context=64b5828d-2c8d-4252-a5aa-d2171166a6fa in CURRENT</msg>
+<msg time="2025-09-04T23:58:21.478786" level="INFO">Successfully changed active context: context=64b5828d-2c8d-4252-a5aa-d2171166a6fa</msg>
+<msg time="2025-09-04T23:58:21.515922" level="INFO">Successfully closed Context</msg>
+<tag>TestCase2</tag>
+<status status="PASS" start="2025-09-04T23:58:16.229310" elapsed="5.230367"/>
+</test>
+<test id="s1-t3" name="Login Fails with Invalid Password" line="111">
+<kw name="Open Web Browser">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-04T23:58:21.519104" level="INFO">Switching browser to browser=4c64bad9-5088-4d94-b890-a598e124a4db</msg>
+<msg time="2025-09-04T23:58:21.520546" level="INFO">Successfully changed active browser: browser=4c64bad9-5088-4d94-b890-a598e124a4db</msg>
+<msg time="2025-09-04T23:58:21.520629" level="INFO">Reusing existing browser with id: browser=4c64bad9-5088-4d94-b890-a598e124a4db</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-04T23:58:21.518713" elapsed="0.001966"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-09-04T23:58:21.524045" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": true,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 768,
+    "width": 1200
+  }
+}</msg>
+<msg time="2025-09-04T23:58:21.538201" level="INFO">Successfully created context. </msg>
+<msg time="2025-09-04T23:58:21.538281" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': True, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 768, 'width': 1200}}</msg>
+<arg>viewport={"width": ${testsite_width} , "height": ${testsite_height}}</arg>
+<arg>ignoreHTTPSErrors=True</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-09-04T23:58:21.521040" elapsed="0.017303"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-04T23:58:31.816984" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-09-04T23:58:31.817246" level="INFO">See also file:///Users/mindmc/Desktop/Assignment-1/Testcase/playwright-log.txt for additional details.</msg>
+<msg time="2025-09-04T23:58:31.818142" level="FAIL">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://the-internet.herokuapp.com/login", waiting until "load"
+</msg>
+<arg>${page_url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-09-04T23:58:21.538504" elapsed="10.286714">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://the-internet.herokuapp.com/login", waiting until "load"
+</status>
+</kw>
+<arg>${Web_Testing_Url}</arg>
+<status status="FAIL" start="2025-09-04T23:58:21.518342" elapsed="10.307142">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://the-internet.herokuapp.com/login", waiting until "load"
+</status>
+</kw>
+<kw name="Recheck Elements by path">
+<arg>${username_path}</arg>
+<status status="NOT RUN" start="2025-09-04T23:58:31.825829" elapsed="0.000164"/>
+</kw>
+<kw name="Recheck Elements by path">
+<arg>${password_path}</arg>
+<status status="NOT RUN" start="2025-09-04T23:58:31.826190" elapsed="0.000071"/>
+</kw>
+<kw name="Recheck Elements by path">
+<arg>${submit_btn_path}</arg>
+<status status="NOT RUN" start="2025-09-04T23:58:31.826409" elapsed="0.000056"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>found all login elements</arg>
+<arg>console=yes</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-04T23:58:31.826620" elapsed="0.000058"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>${username_path}</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-09-04T23:58:31.826897" elapsed="0.000115"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>${password_path}</arg>
+<arg>${password_wrong}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-09-04T23:58:31.827206" elapsed="0.000070"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${submit_btn_path}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-09-04T23:58:31.827531" elapsed="0.000102"/>
+</kw>
+<kw name="Recheck Elements by path">
+<arg>${flash_error}</arg>
+<status status="NOT RUN" start="2025-09-04T23:58:31.827857" elapsed="0.000077"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<var>${msg}</var>
+<arg>${flash_error}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-09-04T23:58:31.828118" elapsed="0.000064"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${msg}</arg>
+<arg>${password_alert}</arg>
+<arg>msg="Not Match"</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2025-09-04T23:58:31.828333" elapsed="0.000056"/>
+</kw>
+<msg time="2025-09-04T23:58:31.840069" level="INFO">Switching context to context=f4c85053-ce51-4c4a-83bf-08f45f9f64b1 in CURRENT</msg>
+<msg time="2025-09-04T23:58:31.842294" level="INFO">Successfully changed active context: context=f4c85053-ce51-4c4a-83bf-08f45f9f64b1</msg>
+<msg time="2025-09-04T23:58:31.855929" level="INFO">Successfully closed Context</msg>
+<tag>TestCase3</tag>
+<status status="FAIL" start="2025-09-04T23:58:21.516278" elapsed="10.312317">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://the-internet.herokuapp.com/login", waiting until "load"
+</status>
+</test>
+<status status="FAIL" start="2025-09-04T23:58:05.546379" elapsed="26.310127"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">TestCase1</stat>
 <stat pass="1" fail="0" skip="0">TestCase2</stat>
+<stat pass="0" fail="1" skip="0">TestCase3</stat>
 </tag>
 <suite>
-<stat name="Assignment" id="s1" pass="1" fail="0" skip="0">Assignment</stat>
+<stat name="Assignment2" id="s1" pass="2" fail="1" skip="0">Assignment2</stat>
 </suite>
 </statistics>
 <errors>
