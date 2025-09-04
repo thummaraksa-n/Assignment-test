@@ -4,40 +4,9 @@ Library     Collections
 Library     Browser
 
 Resource    ${CURDIR}/../Repositories/assignment.resource
-Resource    ${CURDIR}/../Variables/assignment.resource
-Resource    ${CURDIR}/../Keywords/assignment.resource
+Resource    ${CURDIR}/../Variables/assignment2.resource
+Resource    ${CURDIR}/../Keywords/assignment2.resource
 
-*** Variables ***
-${Web_Testing_Url}    https://the-internet.herokuapp.com/login
-${secure_page}        https://the-internet.herokuapp.com/secure
-
-${username_alert}     Your username is invalid!
-${password_alert}     Your password is invalid!
-
-${username}           tomsmith
-${password}           SuperSecretPassword!
-${username_wrong}     abc
-${password_wrong}     123456
-
-${username_path}      //input[@id='username']
-${password_path}      //input[@id='password']
-${submit_btn_path}    //button[@type='submit']
-${flash_error}        //div[@class='flash error']
-
-*** Keywords ***
-Open Web Browser
-    [Arguments]    ${page_url}
-    New Browser     chromium    headless=False
-    New Context     viewport={"width": ${testsite_width} , "height": ${testsite_height}}    ignoreHTTPSErrors=True
-    New Page        ${page_url}  
-
-Recheck Elements by path
-    [Arguments]    @{multi_paths}
-    FOR    ${path}    IN    @{multi_paths}
-        Wait For Elements State   ${path}     visible    10s
-        Log    ✅Found ${path} element    console=yes     
-    END
-    
 
 *** Test Cases ***
 # TC1 Login is valid
