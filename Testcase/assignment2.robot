@@ -32,9 +32,12 @@ Open Web Browser
     New Page        ${page_url}  
 
 Recheck Elements by path
-    [Arguments]    ${path}
-    Wait For Elements State   ${path}     visible    10s
-    Log    ✅Found ${path} element    console=yes
+    [Arguments]    @{multi_paths}
+    FOR    ${path}    IN    @{multi_paths}
+        Wait For Elements State   ${path}     visible    10s
+        Log    ✅Found ${path} element    console=yes     
+    END
+    
 
 *** Test Cases ***
 # TC1 Login is valid
@@ -59,9 +62,8 @@ Recheck Elements by path
 Login is valid
     [Tags]    TestCase1
     Open Web Browser            ${Web_Testing_Url}
-    Recheck Elements by path    ${username_path}
-    Recheck Elements by path    ${password_path}
-    Recheck Elements by path    ${submit_btn_path}
+    @{all_paths}    Create List    ${username_path}    ${password_path}    ${submit_btn_path}
+    Recheck Elements by path    @{all_paths}
     Log   found all login elements    console=yes
     Type Text    ${username_path}    ${username}
     Type Text    ${password_path}    ${password}
@@ -77,9 +79,8 @@ Login is valid
 Login Fails with Invalid Username
     [Tags]   TestCase2
     Open Web Browser            ${Web_Testing_Url}
-    Recheck Elements by path    ${username_path}
-    Recheck Elements by path    ${password_path}
-    Recheck Elements by path    ${submit_btn_path}
+    @{all_paths}    Create List    ${username_path}    ${password_path}    ${submit_btn_path}
+    Recheck Elements by path    @{all_paths}
     Log   found all login elements    console=yes
     Type Text    ${username_path}    ${username_wrong}
     Type Text    ${password_path}    ${password}
@@ -111,9 +112,8 @@ Login Fails with Invalid Username
 Login Fails with Invalid Password
     [Tags]   TestCase3
     Open Web Browser            ${Web_Testing_Url}
-    Recheck Elements by path    ${username_path}
-    Recheck Elements by path    ${password_path}
-    Recheck Elements by path    ${submit_btn_path}
+    @{all_paths}    Create List    ${username_path}    ${password_path}    ${submit_btn_path}
+    Recheck Elements by path    @{all_paths}
     Log   found all login elements    console=yes
     Type Text    ${username_path}    ${username}
     Type Text    ${password_path}    ${password_wrong}
